@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "utn_backend": {
+      "main": "src/utn_backend/main.mo",
+      "type": "motoko"
+    },
+    "utn_frontend": {
+      "dependencies": [
+        "utn_backend"
+      ],
+      "source": [
+        "src/utn_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "utn_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
